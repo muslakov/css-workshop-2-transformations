@@ -54,6 +54,7 @@ body {
     font-size: 1rem;
     position: absolute;
     bottom: 15px;
+    
     left: 15px;
 }
 
@@ -63,4 +64,24 @@ body {
 
 .demo__icon {
     max-width: 90px;
+    transition: all 2s ease-in-out;
+    
+}
+
+.translate:hover>.demo__icon {
+    transform: translateX(10px);
+    filter:invert(1)
+
+}
+
+.rotate:hover .demo__icon {
+    transform: rotate(720deg);
+}
+
+.scale:hover .demo__icon {
+    transform: scale(1.42);
+}
+
+.skew:hover .demo__icon {
+    transform: skewY(42deg);
 }
